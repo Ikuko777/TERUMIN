@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TERUMIN" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oop-mQ-QCy">
+                                <rect key="frame" x="102" y="416" width="171" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="みんなで演奏"/>
+                                <connections>
+                                    <segue destination="OeQ-Et-WYd" kind="show" id="YJj-A0-hQb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scR-2k-lMI">
+                                <rect key="frame" x="102" y="483" width="171" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="ひとりで演奏"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unchimin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvE-t6-aMk">
+                                <rect key="frame" x="124" y="212" width="127" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="iPB-Ka-h0c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="scR-2k-lMI" secondAttribute="bottom" constant="138" id="Dfq-g5-eyt"/>
+                            <constraint firstItem="scR-2k-lMI" firstAttribute="top" secondItem="Oop-mQ-QCy" secondAttribute="bottom" constant="21" id="KcA-CE-bod"/>
+                            <constraint firstItem="scR-2k-lMI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LdN-Kz-Pv1"/>
+                            <constraint firstItem="Oop-mQ-QCy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="igo-1C-edO"/>
+                            <constraint firstItem="pvE-t6-aMk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="192" id="jIw-y4-YGM"/>
+                            <constraint firstItem="pvE-t6-aMk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kkx-mA-lDN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eZZ-SH-Ykj">
+            <objects>
+                <viewController id="OeQ-Et-WYd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lw4-NU-f1k">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8g-fK-9II">
+                                <rect key="frame" x="102" y="532" width="170" height="63"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <state key="normal" title="スタート"/>
+                                <connections>
+                                    <segue destination="pVZ-Eq-0ds" kind="show" id="MeD-nh-ieg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="チューニング中・・・" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76J-TV-QB6">
+                                <rect key="frame" x="65" y="258" width="244" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="d8g-fK-9II" firstAttribute="centerX" secondItem="lw4-NU-f1k" secondAttribute="centerX" id="9Ip-nG-01u"/>
+                            <constraint firstItem="WUI-bJ-bV1" firstAttribute="bottom" secondItem="d8g-fK-9II" secondAttribute="bottom" constant="72" id="Asy-yL-D3a"/>
+                            <constraint firstItem="76J-TV-QB6" firstAttribute="centerX" secondItem="lw4-NU-f1k" secondAttribute="centerX" id="UqJ-PS-8Yp"/>
+                            <constraint firstItem="76J-TV-QB6" firstAttribute="top" secondItem="WUI-bJ-bV1" secondAttribute="top" constant="238" id="qvi-VH-LcX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WUI-bJ-bV1"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1vJ-63-zd3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="83J-NR-QFE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="892" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RW3-zW-ms8">
+            <objects>
+                <viewController id="pVZ-Eq-0ds" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vwK-Zg-2kD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="440 Hz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r32-rM-Z0C">
+                                <rect key="frame" x="132" y="221" width="111" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="音量 : 20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w28-7E-5IQ">
+                                <rect key="frame" x="121" y="283" width="133" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ax6-Xh-lnf">
+                                <rect key="frame" x="154" y="538" width="67" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="おわり"/>
+                                <connections>
+                                    <segue destination="mnN-fx-1bj" kind="show" id="Ka5-A2-s3O"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ax6-Xh-lnf" firstAttribute="centerX" secondItem="vwK-Zg-2kD" secondAttribute="centerX" id="9ki-YB-6zb"/>
+                            <constraint firstItem="w28-7E-5IQ" firstAttribute="centerX" secondItem="vwK-Zg-2kD" secondAttribute="centerX" id="LXU-IJ-2PI"/>
+                            <constraint firstItem="r32-rM-Z0C" firstAttribute="centerX" secondItem="vwK-Zg-2kD" secondAttribute="centerX" id="g1Z-ir-ZEN"/>
+                            <constraint firstItem="w28-7E-5IQ" firstAttribute="top" secondItem="vwK-Zg-2kD" secondAttribute="top" constant="283" id="kSG-jb-Ulu"/>
+                            <constraint firstItem="2WB-Fm-OU2" firstAttribute="bottom" secondItem="ax6-Xh-lnf" secondAttribute="bottom" constant="90" id="tbn-fz-ggK"/>
+                            <constraint firstItem="w28-7E-5IQ" firstAttribute="top" secondItem="r32-rM-Z0C" secondAttribute="bottom" constant="21" id="vL0-AB-WbI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2WB-Fm-OU2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Eys-eR-FE6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i2n-3h-oII" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1673" y="134"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vEh-Z6-3QN">
+            <objects>
+                <viewController id="mnN-fx-1bj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FXx-VV-ada">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tg2-0U-tVH">
+                                <rect key="frame" x="150" y="235" width="75" height="57"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="保存"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36G-XT-LfY">
+                                <rect key="frame" x="132" y="337" width="112" height="57"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="シェア"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZP-DJ-6qr">
+                                <rect key="frame" x="75" y="435" width="224" height="57"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="トップに戻る"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="4PA-zM-veJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KZP-DJ-6qr" firstAttribute="top" secondItem="36G-XT-LfY" secondAttribute="bottom" constant="41" id="Dpc-ta-ae0"/>
+                            <constraint firstItem="KZP-DJ-6qr" firstAttribute="centerX" secondItem="FXx-VV-ada" secondAttribute="centerX" id="IjT-CV-sBo"/>
+                            <constraint firstAttribute="bottom" secondItem="36G-XT-LfY" secondAttribute="bottom" constant="273" id="M4k-Yg-RbA"/>
+                            <constraint firstItem="36G-XT-LfY" firstAttribute="top" secondItem="tg2-0U-tVH" secondAttribute="bottom" constant="45" id="nNQ-Th-6uU"/>
+                            <constraint firstItem="tg2-0U-tVH" firstAttribute="centerX" secondItem="FXx-VV-ada" secondAttribute="centerX" id="ttA-ef-NFA"/>
+                            <constraint firstItem="36G-XT-LfY" firstAttribute="centerX" secondItem="FXx-VV-ada" secondAttribute="centerX" id="uEx-tR-gKq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="H8V-Yb-TPL"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="43r-p5-WyY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bbj-9K-B6K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2506" y="134"/>
+        </scene>
+    </scenes>
+</document>
