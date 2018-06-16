@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5355A63DB83975DDF372AB82 /* Pods_TERUMIN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6186B7FF79DD8C5B5817763 /* Pods_TERUMIN.framework */; };
+		F27776F820D4FB3B0097147D /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27776F720D4FB3B0097147D /* ConnectionManager.swift */; };
+		F27776FA20D4FC570097147D /* PeerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F27776F920D4FC570097147D /* PeerKit.framework */; };
+		F27776FC20D4FD560097147D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F27776FB20D4FD560097147D /* Foundation.framework */; };
+		F27776FE20D5014B0097147D /* TuningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27776FD20D5014B0097147D /* TuningViewController.swift */; };
+		F277770020D508190097147D /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27776FF20D508190097147D /* SessionViewController.swift */; };
+		F277770220D512100097147D /* EndingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F277770120D512100097147D /* EndingViewController.swift */; };
+		F277770420D519DD0097147D /* terumon01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F277770320D519DD0097147D /* terumon01.jpg */; };
 		FC560B3F20D4D43900331679 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC560B3E20D4D43900331679 /* AppDelegate.swift */; };
 		FC560B4120D4D43900331679 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC560B4020D4D43900331679 /* ViewController.swift */; };
 		FC560B4420D4D43900331679 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC560B4220D4D43900331679 /* Main.storyboard */; };
@@ -15,6 +23,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D52288274770FE9FE6D51C1 /* Pods-TERUMIN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TERUMIN.release.xcconfig"; path = "Pods/Target Support Files/Pods-TERUMIN/Pods-TERUMIN.release.xcconfig"; sourceTree = "<group>"; };
+		B6186B7FF79DD8C5B5817763 /* Pods_TERUMIN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TERUMIN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8161CB7A93BD00AD87D0889 /* Pods-TERUMIN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TERUMIN.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TERUMIN/Pods-TERUMIN.debug.xcconfig"; sourceTree = "<group>"; };
+		F27776F720D4FB3B0097147D /* ConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConnectionManager.swift; path = ../../../../../Desktop/ConnectionManager.swift; sourceTree = "<group>"; };
+		F27776F920D4FC570097147D /* PeerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PeerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F27776FB20D4FD560097147D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F27776FD20D5014B0097147D /* TuningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuningViewController.swift; sourceTree = "<group>"; };
+		F27776FF20D508190097147D /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
+		F277770120D512100097147D /* EndingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndingViewController.swift; sourceTree = "<group>"; };
+		F277770320D519DD0097147D /* terumon01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = terumon01.jpg; sourceTree = "<group>"; };
 		FC560B3B20D4D43900331679 /* TERUMIN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TERUMIN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC560B3E20D4D43900331679 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC560B4020D4D43900331679 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +47,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F27776FC20D4FD560097147D /* Foundation.framework in Frameworks */,
+				F27776FA20D4FC570097147D /* PeerKit.framework in Frameworks */,
+				5355A63DB83975DDF372AB82 /* Pods_TERUMIN.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2708B3F38B30B0FB9B876E14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8161CB7A93BD00AD87D0889 /* Pods-TERUMIN.debug.xcconfig */,
+				2D52288274770FE9FE6D51C1 /* Pods-TERUMIN.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		928167DB40AC04ECF2092439 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F27776FB20D4FD560097147D /* Foundation.framework */,
+				F27776F920D4FC570097147D /* PeerKit.framework */,
+				B6186B7FF79DD8C5B5817763 /* Pods_TERUMIN.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FC560B3220D4D43900331679 = {
 			isa = PBXGroup;
 			children = (
 				FC560B3D20D4D43900331679 /* TERUMIN */,
 				FC560B3C20D4D43900331679 /* Products */,
+				2708B3F38B30B0FB9B876E14 /* Pods */,
+				928167DB40AC04ECF2092439 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +96,17 @@
 		FC560B3D20D4D43900331679 /* TERUMIN */ = {
 			isa = PBXGroup;
 			children = (
+				F277770320D519DD0097147D /* terumon01.jpg */,
+				F27776F720D4FB3B0097147D /* ConnectionManager.swift */,
 				FC560B3E20D4D43900331679 /* AppDelegate.swift */,
 				FC560B4020D4D43900331679 /* ViewController.swift */,
 				FC560B4220D4D43900331679 /* Main.storyboard */,
 				FC560B4520D4D43B00331679 /* Assets.xcassets */,
 				FC560B4720D4D43B00331679 /* LaunchScreen.storyboard */,
 				FC560B4A20D4D43B00331679 /* Info.plist */,
+				F27776FD20D5014B0097147D /* TuningViewController.swift */,
+				F27776FF20D508190097147D /* SessionViewController.swift */,
+				F277770120D512100097147D /* EndingViewController.swift */,
 			);
 			path = TERUMIN;
 			sourceTree = "<group>";
@@ -71,9 +118,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC560B4D20D4D43B00331679 /* Build configuration list for PBXNativeTarget "TERUMIN" */;
 			buildPhases = (
+				D64E94B5787D0B3B71D1EBF5 /* [CP] Check Pods Manifest.lock */,
 				FC560B3720D4D43900331679 /* Sources */,
 				FC560B3820D4D43900331679 /* Frameworks */,
 				FC560B3920D4D43900331679 /* Resources */,
+				64E69D36FF6A6B4D8C6D4450 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,10 +174,50 @@
 				FC560B4920D4D43B00331679 /* LaunchScreen.storyboard in Resources */,
 				FC560B4620D4D43B00331679 /* Assets.xcassets in Resources */,
 				FC560B4420D4D43900331679 /* Main.storyboard in Resources */,
+				F277770420D519DD0097147D /* terumon01.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64E69D36FF6A6B4D8C6D4450 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TERUMIN/Pods-TERUMIN-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PeerKit/PeerKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PeerKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TERUMIN/Pods-TERUMIN-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D64E94B5787D0B3B71D1EBF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TERUMIN-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FC560B3720D4D43900331679 /* Sources */ = {
@@ -136,6 +225,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC560B4120D4D43900331679 /* ViewController.swift in Sources */,
+				F277770220D512100097147D /* EndingViewController.swift in Sources */,
+				F27776FE20D5014B0097147D /* TuningViewController.swift in Sources */,
+				F27776F820D4FB3B0097147D /* ConnectionManager.swift in Sources */,
+				F277770020D508190097147D /* SessionViewController.swift in Sources */,
 				FC560B3F20D4D43900331679 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,37 +371,41 @@
 		};
 		FC560B4E20D4D43B00331679 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8161CB7A93BD00AD87D0889 /* Pods-TERUMIN.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SXL9U2ZT42;
+				DEVELOPMENT_TEAM = U4VPAQ9666;
 				INFOPLIST_FILE = TERUMIN/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.custardpudding.TERUMIN;
+				PRODUCT_BUNDLE_IDENTIFIER = com.custardpudding.TERUMIN1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		FC560B4F20D4D43B00331679 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D52288274770FE9FE6D51C1 /* Pods-TERUMIN.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SXL9U2ZT42;
+				DEVELOPMENT_TEAM = U4VPAQ9666;
 				INFOPLIST_FILE = TERUMIN/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.custardpudding.TERUMIN;
+				PRODUCT_BUNDLE_IDENTIFIER = com.custardpudding.TERUMIN1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

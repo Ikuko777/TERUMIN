@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -18,10 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="terumon01.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Cf3-KI-glW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oop-mQ-QCy">
                                 <rect key="frame" x="102" y="416" width="171" height="46"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <state key="normal" title="みんなで演奏"/>
+                                <state key="normal" title="みんなで演奏">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="OeQ-Et-WYd" kind="show" id="YJj-A0-hQb"/>
                                 </connections>
@@ -29,26 +34,21 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scR-2k-lMI">
                                 <rect key="frame" x="102" y="483" width="171" height="46"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <state key="normal" title="ひとりで演奏"/>
+                                <state key="normal" title="ひとりで演奏">
+                                    <color key="titleColor" red="0.99682146310806274" green="0.99205094575881958" blue="0.9919624924659729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unchimin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvE-t6-aMk">
-                                <rect key="frame" x="124" y="212" width="127" height="79"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="79" id="iPB-Ka-h0c"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Cf3-KI-glW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="08Q-bA-PRo"/>
+                            <constraint firstItem="Cf3-KI-glW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1TK-Mu-yoV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="scR-2k-lMI" secondAttribute="bottom" constant="138" id="Dfq-g5-eyt"/>
                             <constraint firstItem="scR-2k-lMI" firstAttribute="top" secondItem="Oop-mQ-QCy" secondAttribute="bottom" constant="21" id="KcA-CE-bod"/>
                             <constraint firstItem="scR-2k-lMI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LdN-Kz-Pv1"/>
+                            <constraint firstItem="Cf3-KI-glW" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Q7T-Bg-KsG"/>
                             <constraint firstItem="Oop-mQ-QCy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="igo-1C-edO"/>
-                            <constraint firstItem="pvE-t6-aMk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="192" id="jIw-y4-YGM"/>
-                            <constraint firstItem="pvE-t6-aMk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kkx-mA-lDN"/>
+                            <constraint firstItem="Cf3-KI-glW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yHm-C2-xyb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -57,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Tuning View Controller-->
         <scene sceneID="eZZ-SH-Ykj">
             <objects>
-                <viewController id="OeQ-Et-WYd" sceneMemberID="viewController">
+                <viewController id="OeQ-Et-WYd" customClass="TuningViewController" customModule="TERUMIN" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lw4-NU-f1k">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,7 +70,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                 <state key="normal" title="スタート"/>
                                 <connections>
-                                    <segue destination="pVZ-Eq-0ds" kind="show" id="MeD-nh-ieg"/>
+                                    <action selector="startButtonTapped:" destination="OeQ-Et-WYd" eventType="touchUpInside" id="nck-Xh-i9H"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="チューニング中・・・" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76J-TV-QB6">
@@ -79,26 +79,38 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0人参加中" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPq-58-tSn">
+                                <rect key="frame" x="138" y="340" width="99" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="d8g-fK-9II" firstAttribute="centerX" secondItem="lw4-NU-f1k" secondAttribute="centerX" id="9Ip-nG-01u"/>
                             <constraint firstItem="WUI-bJ-bV1" firstAttribute="bottom" secondItem="d8g-fK-9II" secondAttribute="bottom" constant="72" id="Asy-yL-D3a"/>
+                            <constraint firstItem="wPq-58-tSn" firstAttribute="top" secondItem="76J-TV-QB6" secondAttribute="bottom" constant="53" id="IQy-9x-yqL"/>
                             <constraint firstItem="76J-TV-QB6" firstAttribute="centerX" secondItem="lw4-NU-f1k" secondAttribute="centerX" id="UqJ-PS-8Yp"/>
                             <constraint firstItem="76J-TV-QB6" firstAttribute="top" secondItem="WUI-bJ-bV1" secondAttribute="top" constant="238" id="qvi-VH-LcX"/>
+                            <constraint firstItem="wPq-58-tSn" firstAttribute="centerX" secondItem="lw4-NU-f1k" secondAttribute="centerX" id="yZd-bv-rvs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WUI-bJ-bV1"/>
                     </view>
                     <navigationItem key="navigationItem" id="1vJ-63-zd3"/>
+                    <connections>
+                        <outlet property="peopleLabel" destination="wPq-58-tSn" id="qHH-LS-5IH"/>
+                        <outlet property="startButton" destination="d8g-fK-9II" id="1KF-8X-Xpt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="83J-NR-QFE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="892" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Session View Controller-->
         <scene sceneID="RW3-zW-ms8">
             <objects>
-                <viewController id="pVZ-Eq-0ds" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="session" id="pVZ-Eq-0ds" customClass="SessionViewController" customModule="TERUMIN" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vwK-Zg-2kD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -120,7 +132,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="おわり"/>
                                 <connections>
-                                    <segue destination="mnN-fx-1bj" kind="show" id="Ka5-A2-s3O"/>
+                                    <action selector="stopButtonTapped:" destination="pVZ-Eq-0ds" eventType="touchUpInside" id="0kQ-3e-JRT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -136,15 +148,18 @@
                         <viewLayoutGuide key="safeArea" id="2WB-Fm-OU2"/>
                     </view>
                     <navigationItem key="navigationItem" id="Eys-eR-FE6"/>
+                    <connections>
+                        <outlet property="stopButton" destination="ax6-Xh-lnf" id="rDQ-R4-bCn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i2n-3h-oII" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1673" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Ending View Controller-->
         <scene sceneID="vEh-Z6-3QN">
             <objects>
-                <viewController id="mnN-fx-1bj" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ending" id="mnN-fx-1bj" customClass="EndingViewController" customModule="TERUMIN" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FXx-VV-ada">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -186,4 +201,7 @@
             <point key="canvasLocation" x="2506" y="134"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="terumon01.jpg" width="5175" height="9200"/>
+    </resources>
 </document>
